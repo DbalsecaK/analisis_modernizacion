@@ -1,0 +1,51 @@
+linea_ini,linea_fin,tipo,paso,quirks,escenarios,nota
+1,98,firma,contrato,Q05,,Parámetros y defaults (01_contrato.md §1-2)
+100,164,declaraciones,—,Q16,,@w_nombre_cuenta declarada y nunca asignada
+168,178,ejecutable,P0,Q02,,
+184,198,ejecutable,P0,Q01,,
+202,250,ejecutable,P1,Q03,,sp_con_comision; error no fatal
+254,272,ejecutable,P2,Q04,,
+276,314,ejecutable,P3,Q05,@L278-286,
+318,376,ejecutable,P4,,@L320-394,dos variantes de confcontable
+378,378,comentario,—,,,
+382,396,ejecutable,P4,Q06 Q07,@L320-394,error 120000
+400,410,ejecutable,P5,,,begin tran + save tran
+414,450,ejecutable,P6.1,Q08,,
+434,434,comentario,—,,,
+454,552,ejecutable,P6.2,Q06 Q09,,IMPADUAN/CORPEI
+466,466,comentario,—,,,
+556,616,ejecutable,P6.3,,,
+562,610,comentario,—,,,bloque REF39 comentado
+620,620,comentario,—,,,
+624,670,ejecutable,P6.4,Q24,@L628-666,sp_vi_ndc_automatica
+672,740,ejecutable,P6.4,Q24 Q25,@L676-730,sp_ndc_ahcc
+744,812,ejecutable,P6.5,Q09 Q12,,canal SMS y servicio SMS
+814,876,ejecutable,P6.5,Q09,,datos crédito TRANSWIFT
+878,962,ejecutable,P6.5,Q10 Q11 Q09,@L878-886,TRANSCLI/TARJCRED/COMEXT
+966,986,ejecutable,P6.5,Q15,,
+992,1016,ejecutable,P6.5,,,ad_notificacion_basica
+1020,1090,ejecutable,P6.5,Q09 Q13 Q23,@L1052-1082,pa_sat_pnotificacion
+1092,1156,ejecutable,P6.5,,,producto débito y ente
+1160,1182,ejecutable,P6.5,,,bloqueo de notificación
+1184,1246,ejecutable,P6.5,Q12,@L1210-1248,sp_eventos
+1248,1258,ejecutable,P6.5,Q12,@L1210-1248,cod_errord = return notificación
+1260,1306,ejecutable,P7,Q17 Q18,@L1276-1298,cuenta contable
+1308,1322,ejecutable,P8,Q18,@L1316,122001
+1326,1342,ejecutable,P9,,@L1210-1248,rollback al savepoint
+1346,1382,ejecutable,P10,Q14,@L1348-1380,
+1386,1476,ejecutable,P11,Q16 Q10 Q17,,sp_grb_mov_y_frmpgo
+1392,1392,comentario,—,,,
+1478,1492,ejecutable,P12,,@L1316,
+1498,1508,ejecutable,P13,,,TRANSQUICK/TRANSBIMO
+1512,1614,ejecutable,P14,,@L1606-1700,sp_grb_comision
+1616,1616,comentario,—,,,
+1618,1708,ejecutable,P14,Q19,@L1606-1700,REF44
+1712,1732,inalcanzable,P14,Q20,,no migrar
+1740,1836,ejecutable,P15,Q21,@L1742-1836,
+1840,1856,inalcanzable,P15,Q20,,no migrar
+1862,1872,comentario,—,,,
+1874,2070,ejecutable,P16,Q22 Q23,@L1876-2090,
+2074,2090,ejecutable,P17,Q22,@L1904-1924,122004
+2094,2126,comentario,—,,,bloque ROLPAGO REF20 comentado
+2130,2136,ejecutable,P18,Q13,,
+2140,2172,ejecutable,P19,Q07,@L320-394,lbl_error
